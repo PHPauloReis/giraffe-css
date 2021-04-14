@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.artboard {
+    width: 100wh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.giraffe {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.giraffe .head {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: flex;    
+    justify-content: center;
+    align-items: flex-end;    
+}
+
+.giraffe .head .head_top {
+    position: absolute;
+    bottom: 30px;
+    background-color: #EDA75D;
+    width: 90px;
+    height: 120px;
+    border-radius: 50px;
+}
+
+.giraffe .head .eyes_container {
+    position: absolute;
+    top: 35px;
+    width: 100%;
+    height: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.giraffe .head .eyes_container .eye {
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius:10px;
+}
+
+.giraffe .head .snout {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #F8D982;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.giraffe .head .snout .nose_container {
+    position: absolute;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.giraffe .head .snout .hole {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #E37437;
+}
+
+.giraffe .head .snout .month {
+    position: absolute;
+    top: 50px;
+    border: 3px solid #EDA75D;
+    width: 50px;
+    height: 25px;
+    border-radius: 0 0 50px 50px;
+    border-top: none;
+    background-color: #F8D982;
+}
+
+.giraffe .head .snout .leafs_container {
+    position: absolute;
+}
+
+.giraffe .head .snout .leafs_container .leaf {
+    width: 13px;
+    height: 30px;
+    background-color: #97D33B;
+    border-radius: 20px;
+}
+
+.giraffe .head .snout .leafs_container .leaf:first-child {
+    position: absolute;
+    transform: rotate(100deg);
+    top: 50px;
+    left: 20px;
+}
+
+.giraffe .head .snout .leafs_container .leaf:last-child {
+    position: absolute;
+    transform: rotate(135deg);
+    top: 57px;
+    left: 10px;
+}
+
+.giraffe .head .athens_container {
+    position: absolute;
+    width: 50px;
+    top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.giraffe .head .athens_container .athen {
+    width: 12px;
+    height: 50px;
+    background-color: #E37335;
+    position: relative;
+}
+
+.giraffe .head .athens_container .athen::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color: #E37335;
+    top: -10px;
+    left: -9px;
+    border-radius: 20px;
+}
+
+.giraffe .head .ears_container {
+    width: 100%;
+}
+
+.giraffe .head .ears_container .ear {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 40px;
+    height: 80px;
+    border-radius: 20px;
+    border: 10px solid #EDA75D;
+    background-color: #FDFD9B;
+}
+
+.giraffe .head .ears_container .ear:first-child {
+    transform: rotate(45deg);
+    top: 30px;
+    left: 130px;
+}
+
+.giraffe .head .ears_container .ear:last-child {
+    transform: rotate(-45deg);
+    top: 30px;
+    left: 30px;
+}
+
+.giraffe .neck {
+    width: 40px;
+    height: 100px;
+    margin-top: -20px;
+    background-color: #EDA75D;
+    position: relative;
+    z-index: -1;
+}
+
+.giraffe .neck::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    width: 20px;
+    height: 40px;
+    border-radius: 20px 0 0 20px;
+    background-color: #E37335;
+}
+
+.giraffe .neck::before {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    width: 15px;
+    height: 30px;
+    border-radius: 0 20px 20px 0;
+    background-color: #E37335;
+}
